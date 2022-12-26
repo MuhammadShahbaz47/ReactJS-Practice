@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './Heading';
 import Bag from './bag';
+import Btn from './btn';
 
 // function Header(){
 //   return <h1>Hello Worlds</h1>
@@ -13,6 +14,7 @@ function App(props) {
   <div>
     <h1>{props.title} <Header/></h1>
     <h2><Bag/></h2>
+    <Btn/>
   </div>
   )
 }
