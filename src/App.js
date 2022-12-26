@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './Heading';
-import Bag from './bag';
-import Btn from './btn';
+import Header from './components/Heading';
+import Bag from './components/bag';
+import Btn from './components/btn';
+import ModeToggler from './components/modeToggler';
 
 // function Header(){
 //   return <h1>Hello Worlds</h1>
@@ -10,11 +11,18 @@ import Btn from './btn';
 
 function App(props) {
   return (
-  //passed props and a component named header in h1
   <div>
+    {/* passed props and a component named header in h1 */}
     <h1>{props.title} <Header/></h1>
+
+    {/* bag component is used to print props children */}
     <h2><Bag/></h2>
+
+    {/* Calling Handle Click Function */}
     <Btn/>
+
+    {/* User Events */}
+    <ModeToggler/>
   </div>
   )
 }
