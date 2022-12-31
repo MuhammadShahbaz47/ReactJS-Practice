@@ -1,5 +1,5 @@
 export default function ModeToggler(){
-    let darkModeOn = true
+    let darkModeOn = false
     const darkMode = <h1>Dark Mode is On</h1>
     const lightMode = <h1>Light Mode is On</h1>
 
@@ -14,6 +14,10 @@ export default function ModeToggler(){
     }
     return(
         <div>
+            <br/>
+            <hr/>
+            <h1 style={{textAlign:"center"}}>onClick Mode Toggler Example</h1>
+
             {darkModeOn ? darkMode : lightMode}
             <button onClick={handleClick}>click</button>
         </div>
