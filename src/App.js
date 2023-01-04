@@ -5,6 +5,7 @@ import Bag from './components/bag';
 import Btn from './components/btn';
 import ModeToggler from './components/modeToggler';
 import UseStateExample from './components/useStateExample';
+import UseReducer from './components/useReducer';
 
 // function Header(){
 //   return <h1>Hello Worlds</h1>
@@ -25,8 +26,11 @@ function App(props) {
     {/* User Events */}
     <ModeToggler/>
 
-    {/* use State Practice Example */}
+    {/* UseState() Practice Example */}
     <UseStateExample/>
+
+    {/* UseReducer() Super Powered UseState Practice Example */}
+    <UseReducer/>
   </div>
   )
 }
