@@ -5,7 +5,7 @@ export default function ModeToggler(){
 
     function handleClick(){
         darkModeOn = !darkModeOn
-        if (darkModeOn == true){
+        if (darkModeOn === true){
             console.log("Dark Mode is On")
         }
         else {

@@ -6,6 +6,8 @@ import Btn from './components/btn';
 import ModeToggler from './components/modeToggler';
 import UseStateExample from './components/useStateExample';
 import UseReducer from './components/useReducer';
+import NavigationExampleComponent from './components/NavigationExampleComponent';
+import { Link, Route, Routes } from 'react-router-dom';
 
 // function Header(){
 //   return <h1>Hello Worlds</h1>
@@ -31,6 +33,26 @@ function App(props) {
 
     {/* UseReducer() Super Powered UseState Practice Example */}
     <UseReducer/>
+
+    <hr/>
+
+    {/* First Install BrowerRouter Library in index.js */}
+    {/* For Navigation First You Have to Add App.js Component inside of BrowerRouter Tag in index.js file */}
+
+      {/* Navbar */}
+      <nav style={{textalign:"center",justifyContent:"center", backgroundColor:"lightblue", padding:"20px"}}>
+        <Link to="/" className='nav-item'>Home</Link> &nbsp;
+        <Link to="/Navigation" className='nav-item'>Navigate to NavigationExampleComponent</Link>
+      </nav>
+
+      <h2>Content below will be updated</h2>
+      
+      {/* Components/Pages */}
+      <Routes>
+        <Route path="/Navigation" element={<NavigationExampleComponent/>}/>
+      </Routes>
+
+
   </div>
   )
 }
