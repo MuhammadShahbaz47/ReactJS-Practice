@@ -8,6 +8,7 @@ import UseStateExample from './components/useStateExample';
 import UseReducer from './components/useReducer';
 import NavigationExampleComponent from './components/NavigationExampleComponent';
 import { Link, Route, Routes } from 'react-router-dom';
+import ConditionalRendering from './components/ConditionalRendering';
 
 // function Header(){
 //   return <h1>Hello Worlds</h1>
@@ -52,6 +53,7 @@ function App(props) {
         <Route path="/Navigation" element={<NavigationExampleComponent/>}/>
       </Routes>
 
+    <ConditionalRendering/>
 
   </div>
   )
