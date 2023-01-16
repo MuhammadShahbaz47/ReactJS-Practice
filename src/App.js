@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Heading';
 import Bag from './components/bag';
@@ -9,6 +8,7 @@ import UseReducer from './components/useReducer';
 import NavigationExampleComponent from './components/NavigationExampleComponent';
 import { Link, Route, Routes } from 'react-router-dom';
 import ConditionalRendering from './components/ConditionalRendering';
+import MediaUse from './components/MediaUse';
 
 // function Header(){
 //   return <h1>Hello Worlds</h1>
@@ -52,8 +52,20 @@ function App(props) {
       <Routes>
         <Route path="/Navigation" element={<NavigationExampleComponent/>}/>
       </Routes>
+    
+    <br/>
+    <hr/>
+
+    {/* Render according to condition true or false */}
 
     <ConditionalRendering/>
+
+    <br/>
+    <hr/>
+
+    {/* Using assets such as Image, Video, Audio and also the React Player Package for social media platforms */}
+
+    <MediaUse/>
 
   </div>
   )
