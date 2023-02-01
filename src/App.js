@@ -9,6 +9,30 @@ import NavigationExampleComponent from './components/NavigationExampleComponent'
 import { Link, Route, Routes } from 'react-router-dom';
 import ConditionalRendering from './components/ConditionalRendering';
 import MediaUse from './components/MediaUse';
+import DessertsList from './components/dessertList';
+
+const desserts = [
+  {
+    name: "Chocolate Cake",
+    calories: 400,
+    createdAt: "2022-09-01",
+  },
+  {
+    name: "Ice Cream",
+    calories: 200,
+    createdAt: "2022-01-02",
+  },
+  {
+    name: "Tiramisu",
+    calories: 300,
+    createdAt: "2021-10-03",
+  },
+  {
+    name: "Cheesecake",
+    calories: 600,
+    createdAt: "2022-01-04",
+  },
+];
 
 // function Header(){
 //   return <h1>Hello Worlds</h1>
@@ -66,6 +90,15 @@ function App(props) {
     {/* Using assets such as Image, Video, Audio and also the React Player Package for social media platforms */}
 
     <MediaUse/>
+
+    <br/>
+    <hr/>
+
+    {/* Print a List with Map and Using Filter and Sort Method on it */}
+
+    <h1 style={{textAlign:"center"}}>Print a List with Map and Using Filter and Sort Method on it</h1>
+
+    <DessertsList data={desserts} />
 
   </div>
   )
