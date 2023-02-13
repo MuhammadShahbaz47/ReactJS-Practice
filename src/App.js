@@ -10,6 +10,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import ConditionalRendering from './components/ConditionalRendering';
 import MediaUse from './components/MediaUse';
 import DessertsList from './components/dessertList';
+import PrevStateFunction from './assets/advReactComponents/prevStateFunction';
 
 const desserts = [
   {
@@ -99,6 +100,15 @@ function App(props) {
     <h1 style={{textAlign:"center"}}>Print a List with Map and Using Filter and Sort Method on it</h1>
 
     <DessertsList data={desserts} />
+
+    <br/>
+    <hr/>
+
+    {/* Update Next states only by keeping the Previous State same using prevState() function */}
+
+    <h1 style={{textAlign:"center"}}>PrevState Function</h1>
+
+    <PrevStateFunction />
 
   </div>
   )
