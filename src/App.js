@@ -11,6 +11,7 @@ import ConditionalRendering from './components/ConditionalRendering';
 import MediaUse from './components/MediaUse';
 import DessertsList from './components/dessertList';
 import PrevStateFunction from './advReactComponents/prevStateFunction';
+import AppTwo from './advReactComponents/Test';
 
 const desserts = [
   {
@@ -109,6 +110,13 @@ function App(props) {
     <h1 style={{textAlign:"center"}}>PrevState Function</h1>
 
     <PrevStateFunction />
+
+    <br/>
+    <hr/>
+
+    {/* For Simple Testing using Jest */}
+
+    <AppTwo/>
 
   </div>
   )
