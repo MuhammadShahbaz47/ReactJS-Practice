@@ -12,6 +12,7 @@ import MediaUse from './components/MediaUse';
 import DessertsList from './components/dessertList';
 import PrevStateFunction from './advReactComponents/prevStateFunction';
 import AppTwo from './advReactComponents/Test';
+import FeedbackForm from './advReactComponents/FeedbackFormTest';
 
 const desserts = [
   {
@@ -117,6 +118,13 @@ function App(props) {
     {/* For Simple Testing using Jest */}
 
     <AppTwo/>
+
+    <br/>
+    <hr/>
+
+    {/* For Form Testing using Jest */}
+
+    <FeedbackForm/>
 
   </div>
   )
