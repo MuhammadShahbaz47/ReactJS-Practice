@@ -10,7 +10,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import ConditionalRendering from './components/ConditionalRendering';
 import MediaUse from './components/MediaUse';
 import DessertsList from './components/dessertList';
-import PrevStateFunction from './assets/advReactComponents/prevStateFunction';
+import PrevStateFunction from './advReactComponents/prevStateFunction';
 
 const desserts = [
   {
